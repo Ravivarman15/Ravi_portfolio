@@ -174,19 +174,158 @@
       <!-- ========================================================= -->
       <article class="about active" data-page="about">
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
+        <header class="about-header">
+          <div class="header-left">
+            <h2 class="h2 article-title">About me</h2>
+          </div>
+          <div class="header-badge">
+            <span class="live-pulse-dot"></span>
+            <span>Production AI Engineer</span>
+          </div>
         </header>
 
-        <section class="about-text">
-          <p>
-            I'm an AI Engineer at ARK Learning Arena and an MCA (Data Science) graduate from Takshashila University (CGPA 9.1). I build production Generative AI systems: RAG-based WhatsApp chatbots, workflow automation, and an AI-powered ERP platform used for real admissions, finance and communication workflows. I enjoy taking an idea from dataset or prompt to a deployed, measurable product.
-          </p>
+        <!-- Dynamic High-End Bento / Terminal Hero Block -->
+        <div class="about-hero-bento">
+          <div class="bento-bio-card">
+            <div class="bento-tabs-nav">
+              <button class="bento-tab-btn active" data-bento-tab="overview">
+                <ion-icon name="person-outline"></ion-icon>
+                <span>Overview</span>
+              </button>
+              <button class="bento-tab-btn" data-bento-tab="philosophy">
+                <ion-icon name="bulb-outline"></ion-icon>
+                <span>Engineering Philosophy</span>
+              </button>
+              <button class="bento-tab-btn" data-bento-tab="stack">
+                <ion-icon name="layers-outline"></ion-icon>
+                <span>Core Stack</span>
+              </button>
+            </div>
 
-          <p>
-            My work spans LLM and RAG pipelines (LangChain, LangGraph, ChromaDB, Pinecone), backend APIs (FastAPI, Flask), automation (Zapier, AiSensy WhatsApp API) and cloud deployment (AWS, Docker, Supabase). I also bring a data science foundation in ML, statistics and analytics.
-          </p>
-        </section>
+            <!-- Tab 1: Overview -->
+            <div class="bento-tab-pane active" id="bento-overview">
+              <p class="bio-text">
+                I'm an <strong>AI Engineer</strong> at <strong>ARK Learning Arena</strong> and an MCA (Data Science) graduate from Takshashila University (<span class="cgpa-pill">CGPA 9.1/10</span>). I build production Generative AI systems: RAG-based WhatsApp chatbots, workflow automation, and an AI-powered ERP platform used for real admissions, finance, and communication workflows. I enjoy taking an idea from dataset or prompt to a deployed, measurable product.
+              </p>
+              <p class="bio-text">
+                My work spans LLM and RAG pipelines (<span class="chip-inline">LangChain</span>, <span class="chip-inline">LangGraph</span>, <span class="chip-inline">ChromaDB</span>, <span class="chip-inline">Pinecone</span>), backend APIs (<span class="chip-inline">FastAPI</span>, <span class="chip-inline">Flask</span>), automation (<span class="chip-inline">Zapier</span>, <span class="chip-inline">AiSensy WhatsApp API</span>) and cloud deployment (<span class="chip-inline">AWS</span>, <span class="chip-inline">Docker</span>, <span class="chip-inline">Supabase</span>). I also bring a strong data science foundation in ML, statistics, and analytics.
+              </p>
+              <div class="bio-stats-strip">
+                <div class="mini-stat-badge">
+                  <ion-icon name="flash-outline"></ion-icon>
+                  <span>&lt;2s Latency</span>
+                </div>
+                <div class="mini-stat-badge">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                  <span>3+ Live Systems</span>
+                </div>
+                <div class="mini-stat-badge">
+                  <ion-icon name="school-outline"></ion-icon>
+                  <span>9.1 CGPA</span>
+                </div>
+                <div class="mini-stat-badge">
+                  <ion-icon name="location-outline"></ion-icon>
+                  <span>Chennai, India</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2: Philosophy -->
+            <div class="bento-tab-pane" id="bento-philosophy">
+              <div class="philosophy-grid">
+                <div class="philosophy-item">
+                  <div class="phil-num">01</div>
+                  <div class="phil-content">
+                    <h4>Problem &amp; SLAs First</h4>
+                    <p>Every AI system must solve a concrete operational friction with strict latency budgets (&lt;2s) and measurable ROI before choosing architectures.</p>
+                  </div>
+                </div>
+                <div class="philosophy-item">
+                  <div class="phil-num">02</div>
+                  <div class="phil-content">
+                    <h4>Lean Retrieval Over Complexity</h4>
+                    <p>Migrated from costly vector embeddings to Page-Index retrieval, cutting response latency by ~70% on lean cloud hosting without sacrificing precision.</p>
+                  </div>
+                </div>
+                <div class="philosophy-item">
+                  <div class="phil-num">03</div>
+                  <div class="phil-content">
+                    <h4>Closed-Loop Automation</h4>
+                    <p>AI is most valuable when connected directly to operational execution—hooking conversational intelligence to webhooks, ERP ledgers, and CRM alerts.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3: Core Stack -->
+            <div class="bento-tab-pane" id="bento-stack">
+              <div class="stack-showcase-grid">
+                <div class="stack-box">
+                  <span class="stack-category-name">GenAI &amp; RAG</span>
+                  <div class="stack-tags-wrap">
+                    <span>LangChain</span>
+                    <span>LangGraph</span>
+                    <span>Page-Index RAG</span>
+                    <span>ChromaDB</span>
+                    <span>Prompt Engineering</span>
+                  </div>
+                </div>
+                <div class="stack-box">
+                  <span class="stack-category-name">Backend &amp; DB</span>
+                  <div class="stack-tags-wrap">
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>Flask</span>
+                    <span>Supabase</span>
+                    <span>PostgreSQL</span>
+                  </div>
+                </div>
+                <div class="stack-box">
+                  <span class="stack-category-name">Automation &amp; Cloud</span>
+                  <div class="stack-tags-wrap">
+                    <span>AiSensy WhatsApp API</span>
+                    <span>Zapier</span>
+                    <span>Docker</span>
+                    <span>AWS</span>
+                    <span>React / TS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Interactive macOS Code Terminal -->
+          <div class="bento-terminal-card">
+            <div class="terminal-bar">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title">engineer.config.ts</span>
+              <span class="terminal-badge">LIVE</span>
+            </div>
+            <pre class="terminal-code"><code><span class="t-kw">const</span> <span class="t-var">aiEngineer</span> = {
+  <span class="t-prop">name</span>: <span class="t-str">"Ravivarman R"</span>,
+  <span class="t-prop">role</span>: <span class="t-str">"AI Engineer | GenAI &amp; RAG"</span>,
+  <span class="t-prop">education</span>: <span class="t-str">"MCA Data Science (9.1 CGPA)"</span>,
+  <span class="t-prop">company</span>: <span class="t-str">"ARK Learning Arena"</span>,
+  <span class="t-prop">shipped</span>: [
+    <span class="t-str">"Smart ARK ERP Platform"</span>,
+    <span class="t-str">"ARK WhatsApp AI Bot"</span>,
+    <span class="t-str">"AgentIQ AI AutoML"</span>
+  ],
+  <span class="t-prop">latencyBenchmark</span>: <span class="t-str">"&lt; 2.0s Page-Index"</span>,
+  <span class="t-prop">location</span>: <span class="t-str">"Chennai, India"</span>,
+  <span class="t-prop">availability</span>: <span class="t-bool">true</span>
+};</code></pre>
+            <div class="terminal-footer">
+              <span class="terminal-pulse"></span>
+              <span class="terminal-footer-text">Ready to deploy &bull; Open to AI/GenAI roles</span>
+            </div>
+          </div>
+        </div>
 
         <!-- Production Impact Metrics -->
         <section class="impact-section" id="impact-section">
@@ -665,7 +804,7 @@
             <li class="project-item active" data-filter-item data-category="ai automation">
               <div class="project-card">
                 <div class="project-card-image-box">
-                  <img src="images/p-arkbot.png" alt="Smart ARK ERP Automation Platform" loading="lazy">
+                  <img src="images/smartark-dashboard.jpg" alt="Smart ARK ERP Automation Platform" loading="lazy">
                   <span class="project-badge-tag badge-live">Live in Production</span>
                 </div>
                 <div class="project-content">
@@ -684,7 +823,9 @@
                   </div>
                   <div class="project-footer-actions">
                     <button class="view-btn" onclick="openModal('smartark')">View Case Study &rarr;</button>
-                    <span class="external-live-link">Live at ARK Arena</span>
+                    <a href="https://smart-ark-main.vercel.app/" target="_blank" rel="noopener noreferrer" class="external-live-link" style="color:#0284c7; display:inline-flex; align-items:center; gap:4px; font-weight:600;">
+                      <ion-icon name="open-outline"></ion-icon> Live App
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1950,6 +2091,19 @@
         </svg>
       </div>
 
+      <h3>Platform Screenshots &amp; Workflows</h3>
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="images/smartark-hero.jpg" alt="Smart ARK Multi-Tenant ERP Landing Page" loading="lazy">
+          <img src="images/smartark-dashboard.jpg" alt="Smart ARK Executive Analytics Dashboard" loading="lazy">
+          <img src="images/smartark-workflow.png" alt="Smart ARK Live Attendance and Parent Alert Workflow" loading="lazy">
+          <img src="images/smartark-exams.png" alt="Smart ARK Online Tests and Examination Portal" loading="lazy">
+          <img src="images/smartark-receipt.jpg" alt="Smart ARK Automated Fee Receipt and Branding Preview" loading="lazy">
+        </div>
+        <button class="carousel_btn prev" aria-label="Previous image">&#10094;</button>
+        <button class="carousel_btn next" aria-label="Next image">&#10095;</button>
+      </div>
+
       <h3>Core Features</h3>
       <ul>
         <li><strong>WhatsApp &amp; Email Automation Engine:</strong> Built on AiSensy with 45+ templates, instant notifications, bulk student campaigns, and real-time delivery analytics.</li>
@@ -1972,8 +2126,12 @@
         <span>RBAC</span>
       </div>
 
-      <div class="modal-actions">
-        <div class="prod-note-box">
+      <div class="modal-actions" style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+        <a href="https://smart-ark-main.vercel.app/" target="_blank" rel="noopener noreferrer" class="cert-btn-interactive" style="padding: 10px 20px; font-size: 13.5px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+          <ion-icon name="open-outline"></ion-icon>
+          <span>Open Live Application</span>
+        </a>
+        <div class="prod-note-box" style="margin: 0;">
           <ion-icon name="checkmark-circle"></ion-icon>
           <span>Live in production at ARK Learning Arena</span>
         </div>
