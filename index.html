@@ -288,63 +288,92 @@
         <section class="service anim-reveal">
           <div class="section-title-wrap">
             <h3 class="h3 service-title">What I'm doing</h3>
+            <p class="section-desc">Production AI capabilities delivering measurable latency reductions, automated workflows, and predictive analytics.</p>
           </div>
 
-          <ul class="service-list">
+          <div class="service-grid">
 
-            <li class="service-item anim-reveal" style="--delay: 0.05s">
-              <div class="service-icon-box">
-                <img src="./images/icon-dev.svg" alt="Generative AI" width="28">
+            <!-- 1. Generative AI & RAG -->
+            <div class="service-card card-genai" style="--card-delay: 0.05s">
+              <div class="service-card-top">
+                <div class="service-icon-wrap icon-genai">
+                  <ion-icon name="sparkles"></ion-icon>
+                  <span class="icon-pulse-ring"></span>
+                </div>
+                <span class="service-status-pill pill-cyan">
+                  <span class="status-live-dot"></span> PROD RAG &bull; &lt;2s
+                </span>
               </div>
-              <div class="service-content-box">
-                <h4 class="service-item-title">Generative AI &amp; RAG Systems</h4>
-                <p class="service-item-text">
-                  Designing production RAG pipelines, prompt engineering state machines, and conversational WhatsApp bots with page-indexed retrieval achieving sub-2-second response latency.
-                </p>
-                <div class="service-tag">Production at ARK Learning Arena</div>
+              <h4 class="service-card-title">Generative AI &amp; RAG Systems</h4>
+              <p class="service-card-text">
+                Designing production RAG pipelines, prompt engineering state machines, and conversational WhatsApp bots with page-indexed retrieval achieving sub-2-second response latency.
+              </p>
+              <div class="service-card-footer">
+                <span class="service-tag-pill"><ion-icon name="checkmark-done-circle"></ion-icon> Production at ARK Learning Arena</span>
               </div>
-            </li>
+            </div>
 
-            <li class="service-item anim-reveal" style="--delay: 0.1s">
-              <div class="service-icon-box">
-                <img src="./images/analytics.png" alt="AI Automation" width="28">
+            <!-- 2. AI & Workflow Automation -->
+            <div class="service-card card-auto" style="--card-delay: 0.12s">
+              <div class="service-card-top">
+                <div class="service-icon-wrap icon-auto">
+                  <ion-icon name="sync"></ion-icon>
+                  <span class="icon-pulse-ring"></span>
+                </div>
+                <span class="service-status-pill pill-purple">
+                  <span class="status-live-dot"></span> WORKFLOW OPS
+                </span>
               </div>
-              <div class="service-content-box">
-                <h4 class="service-item-title">AI &amp; Workflow Automation</h4>
-                <p class="service-item-text">
-                  Eliminating manual institutional operations through event-driven WhatsApp messaging, email triggers, and Zapier pipelines connecting multi-source webhooks with database records.
-                </p>
-                <div class="service-tag">45+ Automated Communication Templates</div>
+              <h4 class="service-card-title">AI &amp; Workflow Automation</h4>
+              <p class="service-card-text">
+                Eliminating manual institutional operations through event-driven WhatsApp messaging, email triggers, and Zapier pipelines connecting multi-source webhooks with database records.
+              </p>
+              <div class="service-card-footer">
+                <span class="service-tag-pill"><ion-icon name="git-network"></ion-icon> 45+ Automated Communication Templates</span>
               </div>
-            </li>
+            </div>
 
-            <li class="service-item anim-reveal" style="--delay: 0.15s">
-              <div class="service-icon-box">
-                <img src="./images/machine.png" alt="Machine Learning" width="28">
+            <!-- 3. Machine Learning & AutoML -->
+            <div class="service-card card-ml" style="--card-delay: 0.19s">
+              <div class="service-card-top">
+                <div class="service-icon-wrap icon-ml">
+                  <ion-icon name="hardware-chip"></ion-icon>
+                  <span class="icon-pulse-ring"></span>
+                </div>
+                <span class="service-status-pill pill-amber">
+                  <span class="status-live-dot"></span> AUTOML &bull; MODELS
+                </span>
               </div>
-              <div class="service-content-box">
-                <h4 class="service-item-title">Machine Learning &amp; AutoML</h4>
-                <p class="service-item-text">
-                  Building supervised regression and classification models, automated model benchmarking with PyCaret, and risk-scoring systems with XGBoost and Scikit-learn.
-                </p>
-                <div class="service-tag">AgentIQ AI &bull; Finx AI &bull; Winner, ML Datathon</div>
+              <h4 class="service-card-title">Machine Learning &amp; AutoML</h4>
+              <p class="service-card-text">
+                Building supervised regression and classification models, automated model benchmarking with PyCaret, and risk-scoring systems with XGBoost and Scikit-learn.
+              </p>
+              <div class="service-card-footer">
+                <span class="service-tag-pill"><ion-icon name="trophy"></ion-icon> AgentIQ AI &bull; Finx AI &bull; Winner, ML Datathon</span>
               </div>
-            </li>
+            </div>
 
-            <li class="service-item anim-reveal" style="--delay: 0.2s">
-              <div class="service-icon-box">
-                <img src="./images/data-analytics.png" alt="Data Science" width="28">
+            <!-- 4. Data Science & Predictive Analytics -->
+            <div class="service-card card-ds" style="--card-delay: 0.26s">
+              <div class="service-card-top">
+                <div class="service-icon-wrap icon-ds">
+                  <ion-icon name="bar-chart"></ion-icon>
+                  <span class="icon-pulse-ring"></span>
+                </div>
+                <span class="service-status-pill pill-emerald">
+                  <span class="status-live-dot"></span> 1.5L RECORDS
+                </span>
               </div>
-              <div class="service-content-box">
-                <h4 class="service-item-title">Data Science &amp; Predictive Analytics</h4>
-                <p class="service-item-text">
-                  Deriving actionable operational intelligence from complex student data, performing district-level demand forecasting, and engineering interactive visual decision dashboards.
-                </p>
-                <div class="service-tag">1.5 Lakh NEET Student Campaign Analysis</div>
+              <h4 class="service-card-title">Data Science &amp; Predictive Analytics</h4>
+              <p class="service-card-text">
+                Deriving actionable operational intelligence from complex student data, performing district-level demand forecasting, and engineering interactive visual decision dashboards.
+              </p>
+              <div class="service-card-footer">
+                <span class="service-tag-pill"><ion-icon name="pie-chart"></ion-icon> 1.5 Lakh NEET Student Campaign Analysis</span>
               </div>
-            </li>
+            </div>
 
-          </ul>
+          </div>
         </section>
 
       </article>
@@ -1483,48 +1512,90 @@
 
           <div class="pipeline-container">
 
-            <div class="pipeline-step active" data-pipeline-step="problem">
-              <div class="pipeline-step-num">1</div>
+            <!-- 1. Customer Problem -->
+            <div class="pipeline-step active" data-pipeline-step="problem" style="--step-delay: 0.05s">
+              <div class="pipeline-step-top">
+                <div class="pipeline-step-logo logo-problem">
+                  <ion-icon name="alert-circle-outline"></ion-icon>
+                  <span class="logo-pulse-ring"></span>
+                </div>
+                <span class="pipeline-step-num">01</span>
+              </div>
               <div class="pipeline-step-info">
                 <h4>Customer Problem</h4>
                 <p>Bottlenecks &amp; SLAs</p>
               </div>
             </div>
 
-            <div class="pipeline-step" data-pipeline-step="architecture">
-              <div class="pipeline-step-num">2</div>
+            <!-- 2. Tech Selection -->
+            <div class="pipeline-step" data-pipeline-step="architecture" style="--step-delay: 0.12s">
+              <div class="pipeline-step-top">
+                <div class="pipeline-step-logo logo-arch">
+                  <ion-icon name="git-compare-outline"></ion-icon>
+                  <span class="logo-pulse-ring"></span>
+                </div>
+                <span class="pipeline-step-num">02</span>
+              </div>
               <div class="pipeline-step-info">
                 <h4>Tech Selection</h4>
                 <p>Cost &amp; latency trade-offs</p>
               </div>
             </div>
 
-            <div class="pipeline-step" data-pipeline-step="data">
-              <div class="pipeline-step-num">3</div>
+            <!-- 3. Data Grounding -->
+            <div class="pipeline-step" data-pipeline-step="data" style="--step-delay: 0.19s">
+              <div class="pipeline-step-top">
+                <div class="pipeline-step-logo logo-data">
+                  <ion-icon name="layers-outline"></ion-icon>
+                  <span class="logo-pulse-ring"></span>
+                </div>
+                <span class="pipeline-step-num">03</span>
+              </div>
               <div class="pipeline-step-info">
                 <h4>Data Grounding</h4>
                 <p>Clean schemas &amp; docs</p>
               </div>
             </div>
 
-            <div class="pipeline-step" data-pipeline-step="retrieval">
-              <div class="pipeline-step-num">4</div>
+            <!-- 4. RAG & Reasoning -->
+            <div class="pipeline-step" data-pipeline-step="retrieval" style="--step-delay: 0.26s">
+              <div class="pipeline-step-top">
+                <div class="pipeline-step-logo logo-rag">
+                  <ion-icon name="sparkles-outline"></ion-icon>
+                  <span class="logo-pulse-ring"></span>
+                </div>
+                <span class="pipeline-step-num">04</span>
+              </div>
               <div class="pipeline-step-info">
                 <h4>RAG &amp; Reasoning</h4>
                 <p>Page-index &amp; LangChain</p>
               </div>
             </div>
 
-            <div class="pipeline-step" data-pipeline-step="automation">
-              <div class="pipeline-step-num">5</div>
+            <!-- 5. Automation -->
+            <div class="pipeline-step" data-pipeline-step="automation" style="--step-delay: 0.33s">
+              <div class="pipeline-step-top">
+                <div class="pipeline-step-logo logo-auto">
+                  <ion-icon name="flash-outline"></ion-icon>
+                  <span class="logo-pulse-ring"></span>
+                </div>
+                <span class="pipeline-step-num">05</span>
+              </div>
               <div class="pipeline-step-info">
                 <h4>Automation</h4>
                 <p>AiSensy, Zapier, APIs</p>
               </div>
             </div>
 
-            <div class="pipeline-step" data-pipeline-step="impact">
-              <div class="pipeline-step-num">6</div>
+            <!-- 6. Telemetry & ROI -->
+            <div class="pipeline-step" data-pipeline-step="impact" style="--step-delay: 0.40s">
+              <div class="pipeline-step-top">
+                <div class="pipeline-step-logo logo-roi">
+                  <ion-icon name="trending-up-outline"></ion-icon>
+                  <span class="logo-pulse-ring"></span>
+                </div>
+                <span class="pipeline-step-num">06</span>
+              </div>
               <div class="pipeline-step-info">
                 <h4>Telemetry &amp; ROI</h4>
                 <p>Latency &amp; business impact</p>
