@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // ==========================================
-  // 2. PAGE NAVIGATION
+  // 2. PAGE NAVIGATION and
   // ==========================================
   const navigationLinks = document.querySelectorAll("[data-nav-link]");
   const pages = document.querySelectorAll("[data-page]");
@@ -36,27 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       navigationLinks.forEach(navBtn => navBtn.classList.remove("active"));
       this.classList.add("active");
-    });
-  });
-
-
-  // ==========================================
-  // 2B. BENTO TABS (About Section)
-  // ==========================================
-  const bentoTabBtns = document.querySelectorAll("[data-bento-tab]");
-  const bentoPanes = document.querySelectorAll(".bento-tab-pane");
-
-  bentoTabBtns.forEach(btn => {
-    btn.addEventListener("click", function () {
-      const targetTab = this.getAttribute("data-bento-tab");
-      bentoTabBtns.forEach(b => b.classList.remove("active"));
-      bentoPanes.forEach(p => p.classList.remove("active"));
-
-      this.classList.add("active");
-      const targetPane = document.getElementById(`bento-${targetTab}`);
-      if (targetPane) {
-        targetPane.classList.add("active");
-      }
     });
   });
 
